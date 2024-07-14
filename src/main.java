@@ -21,11 +21,11 @@ public class main {
 			String fileName = sc.next();
 		
 			CSVReader csvReader = new CSVReader();
-			csvData = csvReader.readCSV("C:\\Users\\gmltj\\Desktop\\algorithm\\Inversion\\ROI_CSV\\" + fileName);
+			csvData = csvReader.readCSV("C:\\Users\\gmltj\\Desktop\\github\\ReturnOfInvestment\\ROI_CSV\\" + fileName);
 			
-			convertToArray(csvData);
 			
-			arrData = new String[csvData.size()][];
+			
+			arrData = convertToArray(csvData);
 			previewData(arrData);
 			
 			System.out.println("Is Data Correct? [y/n]");
@@ -72,4 +72,7 @@ public class main {
 		
 		System.out.println("Total Data Size : " + arrData.length);
 	}
+	
+	
+	
 }
